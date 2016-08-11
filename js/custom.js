@@ -7,6 +7,7 @@ $(document).ready(function () {
 		if(ans)
 		{
 			$('.jumbotron').text('');
+			ans=false;
 		}
 		
 		if(error){
@@ -15,7 +16,7 @@ $(document).ready(function () {
 		}
 		else if($(this).html()==='='){
 			$('.jumbotron').text(cal($('.jumbotron').html()))
-			//cal=true;
+			ans=true;
 		}
 		else
 		$('.jumbotron').text($('.jumbotron').html()+$(this).html());
